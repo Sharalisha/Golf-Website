@@ -1,0 +1,68 @@
+body {
+   background: #e6e8ed;
+}
+
+.title {
+   font-size: 20px;
+}
+
+header {
+   text-align: center;
+   font-size: 30px;
+   margin-right: 100px;
+   margin-bottom: 10px;
+   margin-left: 100px;
+   background: #5fb7ad;
+   padding: 20px;
+   font-weight: 600;
+   /*Thickness*/
+}
+
+.body {
+   margin-left: 100px;
+   margin-right: 100px;
+   border-style: solid;
+   margin-bottom: 10px;
+   padding-left: 30px;
+   padding-right: 30px;
+   background: #d5ddf2;
+}
+
+footer {
+   padding: 8px;
+   color: black;
+   background-color: #5fb7ad;
+   clear: left;
+   /*No float elements allowed left side*/
+   text-align: center;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-top: 40px;
+}
+
+#topBtn {
+   /*Scroll to top button*/
+   background-color: #1e665e;
+   padding: 8px;
+   cursor: pointer;
+   font-size: 15px;
+   color: white;
+   text-align: center;
+   margin: 4px 2px;
+   display: inline-block;
+   border-radius: 12px;
+   position: fixed;
+   bottom: 30px;
+   right: 100px;
+}
+
+#topBtn:hover {
+   /*to give a change to button when mouse moved*/
+   background-color: #34aa9d;
+   font-size: 18px;
+}
+
+#topBtn:focus {
+   /*to avoid the border appering when clicked*/
+   outline: 0;
+}

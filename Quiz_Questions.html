@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Golfers / Quiz </title>
+      <link rel="icon" type="gif" href="Images/Icon/icon.png" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link type = "text/css" rel = "stylesheet" href = "External_CSS/NavigationBar.css">
+      <link type = "text/css" rel = "stylesheet" href = "External_CSS/QuizQuestion.css">
+   </head>
+   <body>
+       
+       <script>
+         //Creating the fuction for text zooming and unzooming
+            function resizeText(multiplier) {
+                var element = document.getElementById("big");
+                var currentSize = element.style.fontSize || 1;
+                element.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.5)) + "em";
+            }
+      </script>
+
+      <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" style="margin-left: 20px; margin-right: 5px; margin-top: 75px;"> <!--Increase-->
+      <input name="reSize2" type="button" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" /> <!--Decrease-->
+      <div class="background">
+        
+         <header>  <!--- Contain for navigation bar -->
+            <div class = "container_01">
+               <div class = "header">
+                  <div>
+                     <div class = "navBar_Container">
+                        <a href = "Presentation_Page.html">
+                        <img src = "Images/Icon/icon.png" height = "60px" width = "75px;" class ="logo" > 
+                        </a>
+                        <div class = "navBar">
+                           <ul>
+                              <li><a href = "Main_Page.html"> Home </a></li>
+                              <li><a href = "Quiz_Front.html"> Quiz </a></li>
+                              <li><a href = "SiteMap.html"> Site Map </a></li>
+                              <li><a href = "Product_Page.html"> Products </a></li>
+                              <li><a href = "Gallery.html"> Gallery </a></li>
+                              <li><a href = "Details_Page.html"> About Us </a></li>
+                              <li><a href = "Comments_Page.html"> Comment Us </a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+          
+         <h1> Let's Begin! All the best </h1>
+         <hr style="padding:  5px; background: green; margin-bottom: 18px;">
+         <div>
+            <p id="demo"></p>
+         </div>
+         <div id="big"> 
+         <form id="quiz" name="quiz">  <!-- Contains the questions -->
+            <p> <strong> 1. Which golfer is known as the Walrus? </strong></p>
+            <p id="question1" style="margin-left:8%; font-size: 23px; font-weight: bold;"> </p>  <!--To display answer,  <!--To show if answer correct or not in different color-->
+            <div class="option" style="margin-left: 5%;">
+               <!--Contains the 4 options-->
+               <input type="radio"  name="question1" value="Craig Stadler"> Craig Stadler <br>
+               <input type="radio"  name="question1" value="Jack Nicklaus"> Jack Nicklaus <br>
+               <input type="radio"  name="question1" value="Rory McIlroy">  Rory McIlroy  <br>
+               <input type="radio"  name="question1" value="Jordan Spieth"> Jordan Spieth <br>
+            </div>
+             
+            <p> <strong> 2. What is the maxmium amount of time allowed to look for a lost ball?  </strong></p>
+            <p id="question2" style="margin-left:8%;  font-size: 23px; font-weight: bold;"> </p>
+            <div class="option" style="margin-left: 5%;">
+               <!--Contains the 4 options-->
+               <input type="radio"  name="question2" value="30 minutes"> 30 minutes <br>
+               <input type="radio"  name="question2" value="10 minutes"> 10 minutes <br>
+               <input type="radio"  name="question2" value="5 minutes"> 5 minutes <br>
+               <input type="radio"  name="question2" value="2 minutes"> 2 minutes <br>
+            </div>
+             
+            <p> <strong> 3. Who was the first german to win the German Open? </strong> </p>
+            <p id="question3" style="margin-left:8%; font-size: 23px; font-weight: bold;"> </p>
+            <div class="option" style="margin-left: 5%;">
+               <!--Contains the 4 options-->
+               <input type="radio"  name="question3" value="Justin Thomas"> Justin Thomas <br>
+               <input type="radio"  name="question3" value="Bernhard Langer"> Bernhard Langer <br>
+               <input type="radio"  name="question3" value="Tiger Woods"> Tiger Woods <br>
+               <input type="radio"  name="question3" value="Dustin Johnson"> Dustin Johnson <br>
+            </div>
+             
+            <p> <strong> 4. Who is the 'The Golden Bear'? </strong> </p>
+            <p id="question4" style="margin-left:8%; font-size: 23px; font-weight: bold;"> </p>
+            <div class="option" style="margin-left: 5%;">
+               <!--Contains the 4 options-->
+               <input type="radio"  name="question4" value="Ben Hogan"> Ben Hogan <br>
+               <input type="radio"  name="question4" value="Gary Player"> Gary Player <br>
+               <input type="radio"  name="question4" value="Rory McIlroy"> Rory McIlroy <br>
+               <input type="radio"  name="question4" value="Jack Nicklaus"> Jack Nicklaus <br>
+            </div>
+             
+            <p> <strong> 5. Golf was created in which country? </strong> </p>
+            <p id="question5" style="margin-left:8%; font-size: 23px; font-weight: bold;"> </p>
+            <div class="option" style="margin-left: 5%;">
+               <!--Contains the 4 options-->
+               <input type="radio"  name="question5" value="Scotland"> Scotland <br>
+               <input type="radio"  name="question5" value="Canada"> Canada <br>
+               <input type="radio"  name="question5" value="Australia"> Australia <br>
+               <input type="radio"  name="question5" value="Russia"> Russia <br>
+            </div>
+             
+            <p> <strong> 6. Which course is the traditional home of the masters? </strong> </p>
+            <p id="question6" style="margin-left:8%;  font-size: 23px; font-weight: bold;"> </p>
+            <div class="option" style="margin-left: 5%;">
+               <!--Contains the 4 options-->
+               <input type="radio"  name="question6" value="Muirfield"> Muirfield <br>
+               <input type="radio"  name="question6" value="St. Andrews Links"> St. Andrews Links <br>
+               <input type="radio"  name="question6" value="Augusta in Georgia"> Augusta in Georgia <br>
+               <input type="radio"  name="question6" value="Erin Hills"> Erin Hills <br>
+            </div>
+             
+            <p> <strong> 7. How many holes are there in a standard golf course? </strong> </p>
+            <p id="question7" style="margin-left:8%; font-size: 23px; font-weight: bold;"> </p>
+            <div class="option" style="margin-left: 5%;">
+               <!--Contains the 4 options-->
+               <input type="radio"  name="question7" value="25 holes"> 25 holes <br>
+               <input type="radio"  name="question7" value="10 holes"> 10 holes <br>
+               <input type="radio"  name="question7" value="9 holes"> 9 holes <br>
+               <input type="radio"  name="question7" value="18 holes"> 18 holes <br>
+            </div>
+             
+            <p> <strong>8. What is the usual diameter of the hole? </strong> </p>
+            <p id="question8" style="margin-left:8%; font-size: 23px; font-weight: bold;"> </p>
+            <div class="option" style="margin-left: 5%;">
+               <!--Contains the 4 options-->
+               <input type="radio"  name="question8" value="4.5 inches"> 4.5 inches <br>
+               <input type="radio"  name="question8" value="4.0 inches"> 4.0 inches <br>
+               <input type="radio"  name="question8" value="5.0 inches"> 5.0 inches <br>
+               <input type="radio"  name="question8" value="3.5 inches"> 3.5 inches <br>
+            </div>
+             
+            <p> <strong> 9. What type of bad weather can stop play?  </strong> </p>
+            <p id="question9" style="margin-left:8%;  font-size: 23px; font-weight: bold;"> </p>
+            <div class="option" style="margin-left: 5%;">
+               <!--Contains the 4 options-->
+               <input type="radio"  name="question9" value="Heavy Rain"> Heavy Rain <br>
+               <input type="radio"  name="question9" value="Rain, lightning and thunder"> Rain, lightning and thunder <br>
+               <input type="radio"  name="question9" value="Only lightning"> Only lightning <br>
+               <input type="radio"  name="question9" value="Snowing"> Snowing <br>
+            </div>
+             
+            <p> <strong> 10. What is the name is given to the number 3 woods? </strong> </p>
+            <p id="question10" style="margin-left:8%; font-size: 23px; font-weight: bold;"> </p>
+            <div class="option" style="margin-left: 5%;">
+               <!--Contains the 4 options-->
+               <input type="radio"  name="question10" value="Spoon"> Spoon <br>
+               <input type="radio"  name="question10" value="Irons"> Irons <br>
+               <input type="radio"  name="question10" value="Fairy Woods"> Fairy Woods <br>
+               <input type="radio"  name="question10" value="Hybrid Woods"> Hybrid Woods <br>
+            </div>
+             
+            <input id="Reset" style="margin-left: 250px;" type="button" value="Reset" onclick="window.location.reload()" class="general-button">
+            <input id="Sumit" type="button" value="I'm finished!" onclick="check()">
+             
+            <div id="after_submit">   <!--Div to work after the submit button is clicked-->
+               <p id="message" style="font-style: normal; font-size: 30px; font-weight: bold;"> </p>
+               <img id="picture" style="height: 200px; width: 200px;"> 
+               <p id="marks"></p>
+               <p id="number_correct"></p>
+               <p id="time" > </p>
+            </div>
+         </form>
+          </div>
+         <button onclick="topFunction()" id="topBtn" title="Back to top" i class="fa fa-arrow-up" style="font-size:36px; "> </button> <!-- Button to top-->
+          
+         <div class="footer">
+         Copyrights © 2018 All Rights Reserved.
+         <a href="Sharalisha_CV.html" target="_blank" style="color: white">Page Creator: Sharalisha Kingsley</a>
+         </div>
+          
+         <script src="Javascript/quiz.js"></script>
+         <script>
+            // This function for pop up the "Back to Top" buttton
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+               if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) // For Safari
+            {
+                   document.getElementById("topBtn").style.display = "block";
+               } else 
+            {
+                   document.getElementById("topBtn").style.display = "none";
+               }
+            }
+            
+            // This function for "Back to Top"
+            
+            function topFunction() {
+               document.body.scrollTop = 0; // For Safari
+               document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+         </script>	
+      </div>
+   </body>
+</html>

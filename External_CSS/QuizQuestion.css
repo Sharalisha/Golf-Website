@@ -1,0 +1,120 @@
+body,
+html {
+   height: 100%;
+   margin: 0;
+}
+
+.background{
+   background: url("../Images/Quiz_question/background.jpg") no-repeat center fixed; 
+   background-size: cover;
+}
+          
+h1 {
+   text-align: center;
+   font-size: 60px;
+   font-family: monospace;
+   color: black;
+   font-weight: bold;
+   margin-top: -10px;
+   margin-bottom: 14px;
+}
+
+#quiz {
+   margin: 0px 260px 40px 260px;
+   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   /*Shadow*/
+   background: #a0c1a3;
+   padding: 15px 30px 20px 30px;
+   width: 750px;
+   border-radius: 20px;
+   float: left;
+   font-size: 23px;
+}
+
+input {
+   margin-bottom: 20px;
+}
+
+input[type=radio] {      /*adjusting the radio button*/
+   height: 17px;
+   width: 17px;
+}
+
+#Sumit,
+#Reset {
+   background: green;
+   border: none;
+   border-radius: 5px;
+   padding: 10px;
+   color: white;
+   font-size: 20px;
+   transition-duration: .5s;
+   margin: 5px;
+}
+
+#Sumit:hover,
+#Reset:hover {      /*effect for sumit and reset button*/
+   background: white;
+   border: 1px solid green;
+   color: black;
+   cursor: pointer;
+}
+
+#Sumit:focus,
+#Reset:focus {
+   outline: 0;
+}
+
+#after_submit {      /*summary box after quiz is done and submitted*/
+   padding: 15px;
+   margin: 15px;
+   border-radius: 20px;
+   text-align: center;
+   font-style: italic;
+   font-size: 25px;
+}
+
+#demo {
+   position: fixed;
+   width: 26.6%;
+   margin-left: 83%;
+   margin-top: 20px;
+   background: #800000;
+   padding: 10px;
+   color: white;
+   font-weight: 600;
+   border-radius: 10px 0 0 10px;
+   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#topBtn {
+   background-color: #049e30;
+   padding: 5px 30px 5px 30px;
+   cursor: pointer;
+   font-size: 15px;
+   color: black;
+   text-align: center;
+   margin: 4px 2px;
+   display: inline-block;
+   border-radius: 12px;
+   position: fixed;
+   bottom: 30px;
+   right: 50px;
+}
+
+#topBtn:hover {
+   background-color: #99e8af;
+   font-size: 18px;
+}
+
+#topBtn:focus {
+   outline: 0;
+}
+
+.footer {
+   padding: 10px;
+   font-size: 20px;
+   color: white;
+   background-color: #036B47;
+   clear: left;
+   text-align: center;
+}

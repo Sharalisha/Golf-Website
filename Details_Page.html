@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>  Golfers / Details Page </title>
+      <link rel="icon" type="gif" href="Images/Icon/icon.png" />
+      <link type = "text/css" rel = "stylesheet" href = "External_CSS/NavigationBar.css"> <!--Link to navigation bar-->
+      <link type = "text/css" rel = "stylesheet" href = "External_CSS/DetailsPage.css">
+   </head>
+   <body>
+      <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" style="margin-left: 20px; margin-right: 5px; margin-top: 60px;"> <!--Increase-->
+      <input name="reSize2" type="button" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" /> <!--Decrease-->
+      
+              <script>
+         //Creating the fuction for text zooming and unzooming
+            function resizeText(multiplier) {
+                var element = document.getElementById("big");
+                var currentSize = element.style.fontSize || 1;
+                element.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.5)) + "em";
+            }
+      </script>
+
+       <!--Nagivation bar-->
+      <header>
+         <div class = "container_01">
+            <div class = "header">
+               <div>
+                  <div class = "navBar_Container">
+                     <a href = "Presentation_Page.html">
+                     <img src = "Images/Icon/icon.png" height = "60px" width = "75px;"class ="logo" > 
+                     </a>
+                     <div class = "navBar">
+                        <ul>
+                           <li><a href = "Main_page.html"> Home </a></li>
+                           <li><a href = "Quiz_Front.html"> Quiz </a></li>
+                           <li><a href = "SiteMap.html"> Site Map </a></li>
+                           <li><a href = "Product_Page.html"> Products </a></li>
+                           <li><a href = "Gallery.html"> Gallery </a></li>
+                           <li><a href = "Details_Page.html"> About Us </a></li>
+                           <li><a href = "Comments_Page.html"> Comment Us </a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+       
+       <div id="big"> 
+      <div class="contain">
+         <h1>Know Who We Are </h1>
+         <p class="saying"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br> aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+      </div>
+      <table style=" margin-top: 38px; margin-bottom: 39px;">
+         <tr>
+            <td style="padding-left: 155px;">
+                <div class="container">
+                  <img src="Images/Detail's_page/Student_1.JPG"   alt="Pamodh" class="image">
+                  <div class="middle">
+                     <div class="text">
+                        <h2> Student 1</h2>
+                        Name : Mark Antony <br> IIT ID : 1111111 <br> UOW ID : 1111111 <br> <a href="Sharalisha_CV.html" style="color: black" target="_blank">To CV</a> 
+                     </div>
+                  </div>
+               </div>
+            </td>
+             
+            <td>
+                <div class="container">
+                  <img src="Images/Detail's_page/Student_2.jpg"   alt="Viraj" class="image">
+                  <div class="middle">
+                     <div class="text">
+                        <h2> Student 2</h2>
+                        Name : Ben Gane <br> IIT ID : 222222 <br> UOW ID : 222222 <br><a href="Sharalisha_CV.html" style="color: black" target="_blank">To CV</a> 
+                     </div>
+                  </div>
+               </div>
+            </td>
+             
+            <td>
+                <div class="container">
+                  <img src="Images/Detail's_page/Student_3.JPG"  alt="Sharalisha" class="image">
+                  <div class="middle">
+                     <div class="text">
+                        <h2> Student 3</h2>
+                        Name : Mary Anne <br> IIT ID : 333333 <br> UOW ID : 333333 <br>  <a href="Sharalisha_CV.html" style="color: black" target="_blank">To CV</a>
+                     </div>
+                  </div>
+               </div>
+            </td>
+         </tr>
+          
+      </table>
+       </div>
+       <div class="footer">
+         Copyrights © 2018 All Rights Reserved.
+         <a href="Sharalisha_CV.html" target="_blank" style="color: white">Page Creator: Sharalisha Kingsley</a>
+      </div>
+   </body>
+</html>

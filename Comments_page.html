@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <title> Golfers / Comments Page </title>
+      <link rel="icon" type="gif" href="Images/Icon/icon.png" />
+      <link type = "text/css" rel = "stylesheet" href = "External_CSS/NavigationBar.css">
+      <link rel ="stylesheet" type="text/css"href="External_CSS/MainPage.css">
+   </head>
+   <Body>
+      <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" style="margin-left: 20px; margin-right: 5px; margin-top: 60px;"> 
+      <input name="reSize2" type="button" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" /> 
+              <script>
+         //Creating the fuction for text zooming and unzooming
+            function resizeText(multiplier) {
+                var element = document.getElementById("big");
+                var currentSize = element.style.fontSize || 1;
+                element.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.5)) + "em";
+            }
+      </script>
+
+      <header>
+         <div class = "container_01">
+            <div class = "header">
+               <div>
+                  <div class = "navBar_Container">
+                     <a href = "Presentation_Page.html">
+                     <img src = "Images/Icon/icon.png" height = "60px" width = "75px;"class ="logo" > 
+                     </a>
+                     <div class = "navBar">
+                        <ul>
+                           <li><a href = "Main_page.html"> Home </a></li>
+                           <li><a href = "Quiz_Front.html"> Quiz </a></li>
+                           <li><a href = "SiteMap.html"> Site Map </a></li>
+                           <li><a href = "Product_Page.html"> Products </a></li>
+                           <li><a href = "Gallery.html"> Gallery </a></li>
+                           <li><a href = "Details_Page.html"> About Us </a></li>
+                           <li><a href = "Comments_Page.html"> Comment Us </a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </header>
+       
+      <br>
+      <div class= "comment">
+         <script>
+            function formValidation()
+            {
+            
+            var yname = document.registration.name;
+            
+            var upoor = document.registration.rpoor;
+            var umedium = document.registration.rmedium; 
+            var ugood = document.registration.rgood; 
+            var uexcellent = document.registration.rexcellent; 
+            
+            var ucomment=document.registration.comments;
+            
+            if(allLetter(yname))
+            {
+            if(ratings(upoor,umedium,ugood,uexcellent))
+            {
+            }
+            } 
+            return false;
+            }
+            
+            function showData() 
+            {  
+            var yname = document.registration.name.value; 
+            var umedium = document.registration.rmedium.value; 
+            var ugood = document.registration.rgood.value;
+            var ucomment=document.registration.comments.value;
+            alert("Dear"+" "+ yname + "," + "Thank you very much for your feedback." + " " + "You have rated our site as" + " " + "and your comment was" + " " + ucomment);
+            }
+            function allLetter(yname)
+            { 
+            var letters = /^[A-Za-z]+$/;
+            if(yname.value.match(letters))
+            {
+            return true;
+            }
+            else
+            {
+            alert('Username must have alphabet characters only');
+            yname.focus();
+            return false;
+            }
+            }
+            function ratings(upoor,umedium,ugood,uexcellent)
+            {
+            x=0;
+            
+            if(upoor.checked) 
+            {
+            x++;
+            } if(umedium.checked)
+            {
+            x++; 
+            } if(ugood.checked)
+            {
+            x++;
+            } if(uexcellent.checked)
+            {
+            x++;
+            }
+            if(x==0)
+            {
+            alert('Select your Ratings');
+            upoor.focus();
+            return false;
+            }
+            else
+            {
+            alert(showData());
+            window.location.reload()
+            return true;
+            }
+            }
+            
+         </script>
+         <body onload="document.registration.userid.focus();">
+            <h1 style="color: black">...Leave us a Comment...</h1>
+            <form name='registration' onSubmit="return formValidation();">
+               <label for="name">Your Name:</label></li>
+               <input type="text" name="name" size="50" placeholder="Enter Your Name Here" />
+               <label for="email">Your Email:</label>
+               <input type="text" name="email" size="50" placeholder="Enter Your Email Address Here" />
+               <label id="ratings">Ratings:</label>
+               <br>
+               <input type="radio" name="rpoor" value="poor" />
+               <span>Poor</span>
+               <input type="radio" name="rmedium" value="medium" />
+               <span>Medium</span>
+               <input type="radio" name="rgood" value="good" />
+               <span>Good</span>
+               <input type="radio" name="rexcellent" value="excellent" />
+               <span>Excellent</span><br><br>
+               <label for="comments">Comments:</label>
+               <textarea name="comments" id="comments" placeholder="Enter Your Any Comments Here"></textarea>
+               <input type="submit" name="submit" value="Submit" />
+               <input type="reset" name="reset" value="Reset" />
+            </form>
+      </div>
+      <div class="footer">
+      Copyrights © 2018 All Rights Reserved.
+      <a href="Sharalisha_CV.html" target="_blank" style="color: white">Page Creator: Sharalisha Kingsley</a>
+      </div>
+   </Body>
+</html>

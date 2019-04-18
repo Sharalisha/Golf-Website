@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Sharalisha_CV </title>
+      <link rel="icon" type="gif" href="Images/Icon/icon.png" />    <!--Link to Page Icon-->
+      <link type = "text/css" rel = "stylesheet" href = "External_CSS/Sharalisha_CV.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--Link to Icon Sheet-->
+        <script>
+         //Creating the fuction for text zooming and unzooming
+            function resizeText(multiplier) {
+                var element = document.getElementById("big");
+                var currentSize = element.style.fontSize || 1;
+                element.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.5)) + "em";
+            }
+      </script>
+   </head>
+   <body>
+      <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" style="margin-left: 100px; margin-top: 15px;"> <!--Increase-->
+      <input name="reSize2" type="button" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" /> <!--Decrease-->
+      <header>
+         CURRICULUM VITAE
+      </header>
+       
+      <div>
+         <div class="body">
+            <!--Each topic container--> 
+            <img src="Images/CV/Sharalisha.JPG" height="230px" width="218px" align="right" alt="Sharalisha" title="Sharalisha" > 
+            <div class="title" id="big">
+               <ul>
+                  <li> <b> First Name    : </b> Mary</li>
+                  <br> 
+                  <li> <b> Last Name     : </b> Anne</li>
+                  <br> 
+                  <li> <b> Date Of Birth : </b> 00-00-0000 </li>
+                  <br> 
+                  <li> <b> Address       : </b> ---------- </li>
+                  <br> 
+                  <li> <b> Nationality   : </b> ----------  </li>
+                  <br> 
+                  <li> <b> E-mail        : </b> ---------- </li>
+               </ul>
+            </div>
+         </div>
+          
+         <div class="body">
+            <div class="title" id="big">
+               <!--Each topic container--> 
+               <h3> <u> EDUCATIONAL QUALIFICATION </u> </h3>
+               <div class="content">
+                  <ul>
+                     <li> Grade 1 To Grade 3 <br> 
+                        St.Cecilia's Convent.. <br> <br> 
+                     </li>
+                     <li> 
+                        Grade 3 To GCE O/L <br> 
+                        OKI International School. <br> <br> 
+                     </li>
+                     <li> 
+                        Undergratuate <br> 
+                        Reading BEng Business Information System, <br> 
+                        Informatics Institute of Technology,<br> 
+                        Sri Lanka <br> 
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+          
+         <div class="body">
+            <div class="title" id="big">
+               <!--Each topic container--> 
+               <h3> <u>  EXTRA CURRICULAR </u> </h3>
+               <div class="content" style="line-height: 40px;">
+                  <ul>
+                     <li> Participated in sports meets. </li>
+                     <li> Active member in clubs and socities. </li>
+                     <li> Prefect for few consecative years. </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+          
+         <div class="body">
+            <div class="title" id="big">
+               <!--Each topic container--> 
+               <h3> <u> SKILLS </u>  </h3>
+               <div class="content" style="line-height: 40px;">
+                  <ul>
+                     <li> Good Communication- written and oral skills (English, Sinhala and Tamil). </li>
+                     <li> Effective interpersonal skills. </li>
+                     <li> Excellent conceptual and analytical skills. </li>
+                     <li> Experienced with languages like Java, html and Javascript. </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+          
+         <div class="body">
+            <div class="title" id="big">
+               <!--Each topic container--> 
+               <h3> <u> HOBBIES </u> </h3>
+               <div class="content" style="line-height: 30px;">
+                  <div id="icon" style="margin-left: 30px;">
+                     <i class="fa fa-paint-brush" style="font-size:36px; margin-bottom: 30px;"> </i> &nbsp; &nbsp; &nbsp; 
+                     <i class="fa fa-photo" style="font-size:36px; "> </i> &nbsp; &nbsp; &nbsp;
+                     <i class="fa fa-futbol-o" style="font-size:36px; "> </i> &nbsp; &nbsp; &nbsp;
+                     <i class="fa fa-bicycle" style="font-size:36px; "> </i> &nbsp; &nbsp; &nbsp;
+                     <i class="fa fa-gamepad" style="font-size:36px; "> </i>
+                  </div>
+               </div>
+            </div>
+         </div>
+          
+         <div class="body">
+            <div class="title" id="big">
+               <h3>  <u> OTHER INFORMATION </u>  </h3>
+               <div class="content" style="line-height: 40px;">
+                  <ul>
+                     <li> 
+                        I hereby certify that the information given above is true and accurate to the best of my knowledge. I shall be glad, if you offer me an opportunity to serve your esteemed institution. Thank You. 
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+       
+      <button onclick="topFunction()" id="topBtn" title="Scroll to top"><strong>Back To Top</strong> </button> <!-- Button to move upwards-->
+      <script>
+         // This function for pop up the "Back to Top" buttton
+         
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) // For Safari
+         {
+                document.getElementById("topBtn").style.display = "block";
+            } else 
+         {
+                document.getElementById("topBtn").style.display = "none";
+            }
+         }
+         
+         // This function for "Back to Top"
+         
+         function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+         }
+      </script>	
+      <footer>Created : 03/05/2018 \ Last Edited : 07/07/2018 </footer>
+   </body>
+</html>

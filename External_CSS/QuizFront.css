@@ -1,0 +1,85 @@
+body,
+html {
+   height: 100%;
+   margin: 0;
+}
+
+.bg {
+   background-image: url("../Images/Quiz_front/background3.jpg");  /* The image used */
+   height: 100%;  /* Full height */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 0.9;  /*Transperance*/
+}
+          
+
+.bg:hover {
+   opacity: 1.0;      /* Increasing the thickness */
+}
+
+#tit2 {
+   position: absolute;
+   top: 15%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: black;      /*Font colour*/
+   text-align: center;
+   letter-spacing: 7px;
+   font-size: 75px;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#tit1 {
+   position: absolute;
+   top: 11%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: black;        /*Font colour*/
+   text-align: center;
+   font-size: 35px;
+   font-weight: bold;
+   font-family: monospace;
+}
+
+.contain {
+   position: absolute;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #18f900;       /*Font colour*/
+   text-align: center;
+   letter-spacing: 1px;
+   font-size: 30px;
+   font-family: monospace;
+   margin-right:-10%; 
+   margin-top: 25px;
+   background-color: black;
+   border: 5px solid red;
+   opacity: 0.6;                /*Transperance level*/
+   filter: alpha(opacity=60);   /* For IE8 and earlier */
+}
+
+#button {
+   background-color: #53d170;       /* Green */
+   border: none;
+   color: black;
+   padding: 20px 60px 20px 60px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 16px;
+   cursor: pointer;
+   position: absolute;
+   left: 43%;
+   top: 570px;
+   border-radius: 30px;
+}
+
+#button:focus {
+   outline: 0;      /* Not to display a border when clicked */
+}
+
+#button:hover {
+   font-size: 20px;
+}

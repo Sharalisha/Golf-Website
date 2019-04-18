@@ -1,0 +1,159 @@
+﻿<!DOCTYPE HTML>
+<html>
+   <head>
+      <link rel="icon" type="gif" href="Images/Icon/icon.png" />
+      <link rel="stylesheet" href="External_CSS/ProductPage.css">
+      <link type = "text/css" rel = "stylesheet" href = "External_CSS/NavigationBar.css">
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+      <title>Golfers / Product Page</title>
+      <style>
+         #myForm div{
+         margin-bottom:15px;
+      </style>
+   </head>
+   <body>
+      <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" style="margin-left: 20px; margin-right: 5px; margin-top: 75px;"> <!--Increase-->
+      <input name="reSize2" type="button" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" /> <!--Decrease-->
+       
+              <script>
+         //Creating the fuction for text zooming and unzooming
+            function resizeText(multiplier) {
+                var element = document.getElementById("big");
+                var currentSize = element.style.fontSize || 1;
+                element.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.5)) + "em";
+            }
+      </script>
+
+      <!-- Navigation bar contains-->
+      <header>
+         <div class = "container_01">
+            <div class = "header">
+               <div>
+                  <div class = "navBar_Container">
+                     <a href = "Presentation_Page.html">
+                     <img src = "Images/Icon/icon.png" height = "60px" width = "75px;" class ="logo" > 
+                     </a>
+                     <div class = "navBar">
+                        <ul>
+                           <li><a href = "Main_page.html"> Home </a></li>
+                           <li><a href = "Quiz_Front.html"> Quiz </a></li>
+                           <li><a href = "SiteMap.html"> Site Map </a></li>
+                           <li><a href = "Product_Page.html"> Products </a></li>
+                           <li><a href = "Gallery.html"> Gallery </a></li>
+                           <li><a href = "Details_Page.html"> About Us </a></li>
+                           <li><a href = "Comments_Page.html"> Comment Us </a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+       
+       <div id="big"> 
+      <!--identifying attributes-->    
+      <form action="" method="POST" name="myForm" id="myForm">
+         <div class="orderform">
+            <div class="title">
+               <h1>Order your Items</h1>
+            </div>
+            <div class="item">
+               <label for="golfbat">Golf Bat/Stick LKR 5,000</label>
+               <select id="a">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+               </select>
+            </div>
+            <div class="item">
+               <label for="golfbag">Golf Bag LKR 8,000</label>
+               <select id="b">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+               </select>
+            </div>
+            <div class="item">
+               <label for="golfballmaker">Golf Ball Makers(2) LKR 2,500 </label>
+               <select id="c">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+               </select>
+            </div>
+            <div class="item">
+               <label for="golfball">Golf Ball LKR 3,000 </label>
+               <select id="d">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+               </select>
+            </div>
+            <div class="item">
+               <label for="batheadcovers">Bat/Stick Head Covers LKR 2,500</label>
+               <select id="e">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+               </select>
+            </div>
+            <div class="item1">
+               <h3>Cost</h3>
+            </div>
+            <div class="item2">
+               <div>
+                  LKR  <input type="text" id="cost" value="0" readonly size="3"/>
+               </div>
+               <div>
+                  <input type="submit" />
+               </div>
+            </div>
+         </div>
+      </form>
+       </div>
+      <div class="footer">
+         Copyrights © 2018 All Rights Reserved.
+         <a href="Sharalisha_CV.html" target="_blank" style="color: white">Page Creator: Sharalisha Kingsley</a>
+      </div>
+   </body>
+   <!--calling attributes via id-->
+   <!--calculation script-->
+   <script type="text/javascript">
+      function updateTotal(){
+        var tot = 0;
+        tot += f.a.value * 5000 +
+               f.b.value * 8000 +
+               f.c.value * 2500 +
+               f.d.value * 3000+
+               f.e.value * 2500;
+        document.getElementById("cost").value = tot.toFixed(2);
+      }
+      
+      var f = document.forms['myForm'];
+      var sel = document.getElementsByTagName("select");
+      
+      for(var i=0; i<sel.length; i++) {
+        sel[i].onchange = function(){updateTotal()};
+      }
+      
+      f.onsubmit = function(){
+        alert("Your total cost will be: LKR " + f.cost.value);
+        return false;
+      }
+   </script>
+</html>
